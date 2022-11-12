@@ -6,7 +6,7 @@ VAR
     sentence : STRING;
     
 BEGIN
-    READ(sentence);
+    Read(sentence);
     // algo that count a number of characters in a sentence
     WHILE (i <=sentence.length) DO
         i := i + 1;
