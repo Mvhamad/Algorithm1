@@ -1,0 +1,32 @@
+ALGORITHM Checkpoint1_algo
+VAR
+    i: INTEGER :=0;  // number of characters
+    j: INTEGER :=0;  // number of words
+    k: INTEGER :=0;  // number of vowels
+    sentence : STRING;
+    
+BEGIN
+    // algo that count a number of characters in a sentence
+    WHILE (i <=sentence.length) DO
+        i := i + 1;
+    END_WHILE
+
+    // algo that count a number of words
+    WHILE (j <=sentence.length) DO
+        // count the number of space between 2 words
+        IF (sentence[j] = ' ') THEN
+            j := j+1;
+        END_IF
+    END_WHILE
+    j := j+1; // add the last word of the sentence
+
+    //algo that count a number of vowels in a sentence
+    WHILE (k <=sentence.length) DO
+        IF (sentence[k]='a' or sentence[k]='e' or sentence[k]='i' or sentence[k]='o' or sentence[k]='u' or sentence[k]='y' or
+        sentence[k]='A' or sentence[k]='E' or sentence[k]='I' or sentence[k]='O' or sentence[k]='u' or sentence[k]='y')
+            k := k+1;
+        END_IF
+    END_WHILE
+
+END
+
